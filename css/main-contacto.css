@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "bluecobra";
+  src: url("../font/bluecobra.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bluecobrahalf";
+  src: url("../font/bluecobrahalf.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bluecobralaser";
+  src: url("../font/bluecobralaser.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-color: #ff6100;
+  margin: 0%;
+  margin-bottom: 0%;
+}
+
+#contacto {
+  height: 72.4vh;
+  color: #050505;
+  text-align: center;
+  letter-spacing: 5px;
+  font-weight: 100;
+  margin-top: -1%;
+}
+
+#contacto-titulo {
+  font-size: 550%;
+  font-family: "bluecobralaser";
+}
+
+#contacto-texto {
+  font-size: 200%;
+  font-family: "bluecobra";
+  line-height: 1.5;
+}
+
+span {
+  font-style: italic;
+}

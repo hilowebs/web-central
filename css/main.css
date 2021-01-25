@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "bluecobra";
+  src: url("./font/bluecobra.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bluecobrahalf";
+  src: url("./font/bluecobrahalf.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-image: url("./imgs/fondo.png");
+  background-size: 100%;
+  margin: 0%;
+  margin-bottom: 0%;
+}
+
+#welcome {
+  height: 70vh;
+  letter-spacing: 5px;
+}
+
+#titulo {
+  text-align: center;
+  font-family: "bluecobrahalf";
+  font-size: 550%;
+  font-weight: 100;
+}
+
+#subtitulo {
+  text-align: center;
+  font-family: "bluecobra";
+  font-size: 200%;
+  font-weight: 100;
+  margin-top: 21%;
+}
+
+.link-welcome {
+  font-family: "bluecobra";
+  font-size: 300%;
+  opacity: 80%;
+  text-decoration: none;
+  color: #050505;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: -17%;
+}
+
+#catalogo {
+  position: absolute;
+  right: 0%;
+}
+
+#nosotres {
+  position: absolute;
+  left: 0%;
+}
+
+body {
+  background-image: none;
+  background-color: #ff6100;
+  margin: 0%;
+  margin-bottom: 0%;
+}
+
+#titulo-catalogo {
+  text-align: left;
+  font-family: "bluecobrahalf";
+  font-size: 200%;
+  font-weight: 100;
+}
+
+#subtitulo-catalogo {
+  text-align: left;
+  font-family: "bluecobra";
+  font-size: 200%;
+  font-weight: 100;
+  margin-top: 21%;
+}
+
+#footer {
+  height: 5vh;
+  background-color: #050505;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+
+#redes {
+  display: inline-block;
+  text-align: center;
+}
+
+.link-footer {
+  width: 3%;
+  margin-top: 1%;
+  opacity: 50%;
+}
+
+#footer {
+  height: 5vh;
+  background-color: #050505;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+
+#redes {
+  display: inline-block;
+  text-align: center;
+}
+
+.link-footer {
+  width: 3%;
+  margin-top: 1%;
+  opacity: 50%;
+}

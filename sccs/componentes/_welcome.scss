@@ -1,0 +1,221 @@
+/* -------------- WELCOME -------------- */
+.titulo {
+    font-family: $font-titular;
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    color: $negro;
+    grid-area: ti;
+        animation-name: anima2;
+        animation-duration: 2.4s;
+            /* TELEFONO GRANDE */
+            @media only screen and (max-width: 415px) {
+                font-size: 6rem;
+                margin-top: 1rem;
+            }
+            /* TELEFONO CHICO */
+            @media only screen and (max-width: 360px) {
+                font-size: 5rem;
+                margin-top: 0.5rem;
+            }
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    grid-area: lo;
+        animation-name: anima1;
+        animation-duration: 2s;
+}
+
+.subtitulo {
+    font-family: $font-linea;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin-top: 0rem;
+    color: $negro;
+    grid-area: su;
+        animation-name: anima2;
+        animation-duration: 2.4s;
+            /* TELEFONO GRANDE */
+            @media only screen and (max-width: 415px) {
+                font-size: 1.8rem;
+                letter-spacing: 0.3rem;
+            }
+            /* TELEFONO CHICO */
+            @media only screen and (max-width: 360px) {
+                font-size: 1.5rem;
+                letter-spacing: 0.2rem;
+            }
+}
+
+.nosotres {
+    font-family: $font-derecha;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    color: $negro;
+    padding: 0rem;
+    opacity: 90%;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    grid-area: no;
+        animation-name: anima3;
+        animation-duration: 2.9s;
+            /* TELEFONO GRANDE */
+            @media only screen and (max-width: 415px) {
+                margin-top: 0.2rem;
+                margin-right: -1rem;
+                font-size: 2rem;
+            }
+            /* TELEFONO CHICO */
+            @media only screen and (max-width: 360px) {
+                margin-top: 0.1rem;
+                margin-right: -4rem;
+                font-size: 1.5rem;
+            }
+}
+
+.nosotres:hover {
+    text-decoration: overline underline #ed0000;
+}
+
+.catalogo {
+    font-family: $font-izquierda;
+    font-size: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    color: $negro;
+    padding: 0rem;
+    opacity: 90%;
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    grid-area: ca;
+        animation-name: anima3;
+        animation-duration: 2.9s;
+            /* TELEFONO GRANDE */
+            @media only screen and (max-width: 415px) {
+                margin-top: 0.2rem;
+                margin-left: -4rem;
+                font-size: 2rem;
+            }
+            /* TELEFONO CHICO */
+            @media only screen and (max-width: 360px) {
+                margin-top: 0.1rem;
+                margin-left: -2rem;
+                font-size: 1.5rem;
+            }
+}
+
+.catalogo:hover {
+    text-decoration: overline underline #ed0000;
+}
+
+.contacto {
+    font-family: $font-secundaria;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+    color: $negro;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    grid-area: co;
+        animation-name: anima3;
+        animation-duration: 2.9s;
+            /* TELEFONO GRANDE */
+            @media only screen and (max-width: 415px) {
+                margin-top: 0.5rem;
+                font-size: 1.5rem;
+            }
+            /* TELEFONO CHICO */
+            @media only screen and (max-width: 360px) {
+                margin-top: 0.2rem;
+                font-size: 1rem;
+            }
+}
+
+.contacto:hover {
+    text-decoration: overline #ed0000;
+}
+
+/* -------------- FOOTER -------------- */
+
+.contenedor-footer {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: $negro;
+    text-align: center;
+    grid-area: fo;
+}
+
+#facebook {
+    width: 2rem;
+    opacity: 50%;
+    background-color: $negro;
+    margin-top: 15%;
+        /* TELEFONO GRANDE */
+        @media only screen and (max-width: 415px) {
+            width: 2.5rem;
+            margin-top: 30%;
+        }
+}
+
+#instagram {
+    width: 2rem;
+    opacity: 50%;
+    background-color: $negro;
+    margin-top: 15%;
+        /* TELEFONO GRANDE */
+        @media only screen and (max-width: 415px) {
+            width: 2.5rem;
+            margin-top: 30%;
+        }
+}
+
+.facebook {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------- ANIMACIONES -------------- */
+
+@keyframes anima1 {
+    0% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes anima2 {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes anima3 {
+    0% {opacity: 0%;}
+    50% {opacity: 0%;}
+    100% {opacity: 100%;}
+}

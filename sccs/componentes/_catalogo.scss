@@ -1,0 +1,38 @@
+#main-catalogo {
+    height: 70vh;
+    letter-spacing: 5px;
+    background-color: #ff6100;
+    margin: 0%;
+    margin-bottom: 0%;
+}
+
+#titulo-catalogo {
+    font-family: $font-terciaria;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 350%;
+    font-weight: 100;
+}
+
+#subtitulo-catalogo {
+    text-align: left;
+    font-family: $font-secundaria;
+    margin-top: 0%;
+    margin-left: 10%;
+    font-size: 225%;
+    font-weight: 100;
+}
+
+.link-catalogo {
+    font-family: $font-secundaria;
+    display: block;
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+    font-size: 140%;
+    opacity: 80%;
+    text-decoration: none;
+    color: $negro;
+    font-weight: 300;
+}

@@ -1,0 +1,428 @@
+/* TEXTO */
+@font-face {
+  font-family: "Cyen";
+  src: url("../font/otras/Cyen.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* BASICA */
+@font-face {
+  font-family: "bluecobra";
+  src: url("../font/bluecobra.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* TITULAR */
+@font-face {
+  font-family: "bluecobrahalf";
+  src: url("../font/bluecobrahalf.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* DERECHA */
+@font-face {
+  font-family: "bluecobraital";
+  src: url("../font/bluecobraital.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* IZQUIERDA */
+@font-face {
+  font-family: "bluecobraleft";
+  src: url("../font/bluecobraleft.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+/* LINEA */
+@font-face {
+  font-family: "bluecobralaser";
+  src: url("../font/bluecobralaser.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: #ff6100;
+}
+
+.grid-cotenedor-nosotres {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: ". . ti-no . ." ". . lo-no . ." ". . su-no . ." ". p1 . . ." ". . p2 . ." ". . . p3 ." ". . p4 . ." ". p5 . . ." ". . p6 . ." "li-no-ca . . . li-no-co" "fo fo fo fo fo";
+  /* TELEFONO GRANDE */
+}
+@media only screen and (max-width: 415px) {
+  .grid-cotenedor-nosotres {
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "ti-no ti-no" "lo-no lo-no" "su-no su-no" "p1 p1" "p2 p2" "p3 p3" "p4 p4" "p5 p5" "p6 p6" "li-no-co li-no-co" "li-no-ca li-no-ca" "fo fo";
+  }
+}
+
+/* -------------- MAIN -------------- */
+.titulo-nosotres {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  font-family: "bluecobrahalf";
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-size: 8rem;
+  font-weight: 100;
+  letter-spacing: 1rem;
+  grid-area: ti-no;
+  animation-name: nos-anima1;
+  animation-duration: 4s;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .titulo-nosotres {
+    font-size: 6rem;
+  }
+}
+
+.subtitulo-nosotres {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  font-family: "bluecobra";
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+  grid-area: su-no;
+  animation-name: nos-anima1;
+  animation-duration: 4s;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .subtitulo-nosotres {
+    font-size: 2rem;
+  }
+}
+
+.logo-nosotres {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: lo-no;
+  animation-name: nos-anima2;
+  animation-duration: 4s;
+}
+
+.texto-nosotres {
+  font-family: "Cyen";
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: #ff6100;
+  background-color: #050505;
+  border-radius: 1rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .texto-nosotres {
+    font-size: 1rem;
+  }
+}
+
+#parrafo-nosotres1 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: p1;
+  padding: 1rem;
+  margin-right: -13rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres1 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#parrafo-nosotres2 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: p2;
+  text-align: center;
+  padding: 1rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#parrafo-nosotres3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: p3;
+  padding: 1rem;
+  margin-left: -13rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres3 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#parrafo-nosotres4 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  grid-area: p4;
+  padding: 1rem;
+  text-align: center;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#parrafo-nosotres5 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  grid-area: p5;
+  padding: 1rem;
+  margin-right: -13rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres5 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+#parrafo-nosotres6 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+  grid-area: p6;
+  text-align: center;
+  padding: 0.2rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #parrafo-nosotres6 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* -------------- PRE-FOOTER -------------- */
+.link-nosotres-catalogo {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
+  font-family: "bluecobraleft";
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  opacity: 80%;
+  text-decoration: none;
+  color: #050505;
+  margin-left: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  grid-area: li-no-ca;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .link-nosotres-catalogo {
+    text-align: center;
+    margin-right: 0rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.link-nosotres-catalogo:hover {
+  -webkit-text-decoration: overline underline #ed0000;
+          text-decoration: overline underline #ed0000;
+}
+
+.link-nosotres-contacto {
+  -ms-grid-row: 10;
+  -ms-grid-column: 5;
+  font-family: "bluecobraital";
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  opacity: 80%;
+  text-decoration: none;
+  color: #050505;
+  margin-right: 5rem;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+  grid-area: li-no-co;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .link-nosotres-contacto {
+    text-align: center;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.link-nosotres-contacto:hover {
+  -webkit-text-decoration: overline underline #ed0000;
+          text-decoration: overline underline #ed0000;
+}
+
+/* -------------- FOOTER -------------- */
+.contenedor-footer-nosotres {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: #050505;
+  text-align: center;
+  grid-area: fo;
+}
+@media only screen and (max-width: 415px) {
+  .titulo-nosotres {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .subtitulo-nosotres {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .logo-nosotres {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres1 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres2 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres3 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres4 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres5 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #parrafo-nosotres6 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .link-nosotres-catalogo {
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .link-nosotres-contacto {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .contenedor-footer-nosotres {
+    -ms-grid-row: 12;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+}
+
+#facebook {
+  width: 2rem;
+  opacity: 50%;
+  background-color: #050505;
+  margin-top: 15%;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #facebook {
+    width: 2.5rem;
+    margin-top: 30%;
+  }
+}
+
+#instagram {
+  width: 2rem;
+  opacity: 50%;
+  background-color: #050505;
+  margin-top: 15%;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  #instagram {
+    width: 2.5rem;
+    margin-top: 30%;
+  }
+}
+
+.facebook {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instagram {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------- ANIMACIONES -------------- */
+@keyframes nos-anima1 {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes nos-anima2 {
+  0% {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
