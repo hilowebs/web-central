@@ -25,7 +25,7 @@ body, html {
   min-height: 100%;
   height: 100%;
   max-height: 100%;
-  background-color: #ff6100;
+  background-color: #050505;
 }
 
 .grid-contenedor-contacto {
@@ -34,113 +34,78 @@ body, html {
   margin: 0rem;
   padding: 0rem;
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
-  grid-template-areas: "ti-con ti-con ti-con" "form form form" "fo fo fo";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "contacto" "fo";
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
   .grid-contenedor-contacto {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-areas: "ti-con" "form" "fo";
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "contacto" "fo";
   }
 }
 
-#contacto-titulo {
+.contenedor-contacto {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  color: #050505;
-  text-align: left;
-  margin-left: 1rem;
-  margin-top: 0.5rem;
-  font-size: 6rem;
-  font-family: "bluecobralaser";
-  letter-spacing: 1rem;
-  font-weight: 100;
-  grid-area: ti-con;
-  /* TELEFONO */
-}
-@media only screen and (max-width: 415px) {
-  #contacto-titulo {
-    text-align: center;
-    margin: 0rem;
-    font-size: 4rem;
-  }
-}
-
-.contenedor-form {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  font-family: "bluecobra";
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  color: #050505;
-  margin-top: 0rem;
+  grid-area: contacto;
+  text-align: center;
+  color: #ff6100;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  grid-area: form;
+  vertical-align: middle;
+  letter-spacing: 1rem;
+  margin-top: 5rem;
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
-  .contenedor-form {
-    margin-top: 3rem;
+  .contenedor-contacto {
+    letter-spacing: 0.8rem;
   }
 }
 
-input {
-  border-radius: 0.2rem;
-  height: 2rem;
-  border: solid #050505;
-  background-color: rgba(252, 252, 252, 0);
-  margin: 0.5rem;
-}
-
-label {
-  margin: 0.5rem;
-}
-
-#mensaje {
-  color: #050505;
-  border-radius: 0.5rem;
-  border: solid #050505;
-  height: 11rem;
-  width: 30rem;
-  margin: 0.5rem;
-  background-color: rgba(252, 252, 252, 0);
-  /* TELEFONO */
-}
-@media only screen and (max-width: 415px) {
-  #mensaje {
-    height: 10rem;
-    width: 13rem;
-  }
-}
-
-#enviar {
-  font-family: "bluecobra";
+.ahora {
+  font-family: "bluecobralaser";
+  font-style: italic;
   font-size: 1.5rem;
-  letter-spacing: 0.4rem;
-  border-radius: 0.5rem;
-  border: solid #050505;
-  color: #ff6100;
-  background-color: #050505;
-  margin-bottom: 3rem;
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
-  #enviar {
-    margin-bottom: 1rem;
+  .ahora {
+    font-size: 1rem;
+  }
+}
+
+.podes {
+  font-family: "bluecobra";
+  font-size: 5rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .podes {
+    font-size: 3rem;
+  }
+}
+
+.mail {
+  font-size: 3.5rem;
+  font-family: "bluecobra";
+  margin-top: 0rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .mail {
+    font-size: 2rem;
   }
 }
 
 /* -------------- FOOTER -------------- */
 .contacto-contenedor-footer {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
   margin: 0rem;
   padding: 0rem;
   background-color: #050505;
@@ -148,20 +113,13 @@ label {
   grid-area: fo;
 }
 @media only screen and (max-width: 415px) {
-  #contacto-titulo {
+  .contenedor-contacto {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-  }
-  .contenedor-form {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
   }
   .contacto-contenedor-footer {
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
   }
 }
 

@@ -42,14 +42,14 @@ body, html {
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-  grid-template-areas: "ti-cat ti-cat ." "cat1 . ." "link-cat link-cat link-cat" "fo fo fo";
+  grid-template-areas: "ti-cat ti-cat ." "cat1 . cat2" "link-cat link-cat link-cat" "fo fo fo";
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
   .grid-cotenedor-catalogo {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
-    grid-template-areas: "ti-cat" "cat1" "link-cat" "fo";
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "ti-cat" "cat1" "cat2" "link-cat" "fo";
   }
 }
 
@@ -76,6 +76,32 @@ body, html {
   }
 }
 
+.link-catalogo {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  font-family: "bluecobra";
+  text-align: right;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #050505;
+  letter-spacing: 0.5rem;
+  margin-right: 1rem;
+  margin-top: 3rem;
+  font-weight: 150;
+  grid-area: link-cat;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .link-catalogo {
+    text-align: center;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ------------------------------- MANON SEGRET ------------------------------- */
 #manon-segret-texto {
   color: #050505;
   font-family: "bluecobra";
@@ -117,28 +143,45 @@ body, html {
   }
 }
 
-.link-catalogo {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  font-family: "bluecobra";
-  text-align: right;
-  font-size: 2rem;
-  text-decoration: none;
+/* ------------------------------- PANCHO PIARRISTEGUY ------------------------------- */
+#pancho-piarristeguy-texto {
   color: #050505;
-  letter-spacing: 0.5rem;
-  margin-right: 1rem;
-  margin-top: 3rem;
-  font-weight: 150;
-  grid-area: link-cat;
+  font-family: "bluecobra";
+  text-align: center;
+  letter-spacing: 1rem;
+  margin-top: 0rem;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.pancho-piarristeguy-img {
+  width: 20rem;
+  border: solid #050505;
+  border-radius: 1rem;
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
-  .link-catalogo {
-    text-align: center;
-    margin-right: 0rem;
-    margin-left: 0rem;
-    margin-top: 1rem;
+  .pancho-piarristeguy-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pancho-piarristeguy {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  margin-right: 3rem;
+  text-decoration: none;
+  grid-area: cat2;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 415px) {
+  .pancho-piarristeguy {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
   }
 }
 
@@ -159,17 +202,21 @@ body, html {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
+  .link-catalogo {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
   .manon-segret {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  .link-catalogo {
+  .pancho-piarristeguy {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
   }
   .contenedor-footer {
-    -ms-grid-row: 4;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
