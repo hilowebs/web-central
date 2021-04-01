@@ -52,15 +52,15 @@ body, html {
   padding: 0rem;
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-template-areas: ". ti ." "no lo ca" ". su ." ". co ." "fo fo fo";
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: ". ti ." "no lo ca" ". su ." ". nota ." ". co ." "fo fo fo";
   /* TELEFONO */
 }
 @media only screen and (max-width: 415px) {
   .grid-cotenedor {
     grid-template-columns: 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-    grid-template-areas: "ti ti" "lo lo" "su su" "no ca" "co co" "fo fo";
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "ti ti" "lo lo" "su su" "no ca" "nota nota" "co co" "fo fo";
   }
 }
 
@@ -75,7 +75,7 @@ body, html {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 0rem;
   color: #050505;
   grid-area: ti;
@@ -220,7 +220,7 @@ body, html {
 }
 
 .contacto {
-  -ms-grid-row: 4;
+  -ms-grid-row: 5;
   -ms-grid-column: 2;
   font-family: "bluecobra";
   font-size: 2rem;
@@ -256,9 +256,46 @@ body, html {
           text-decoration: overline #ed0000;
 }
 
+.notas {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  font-family: "bluecobra";
+  font-size: 2rem;
+  font-weight: 100;
+  letter-spacing: 0.3rem;
+  text-decoration: none;
+  color: #050505;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  grid-area: nota;
+  animation-name: anima3;
+  animation-duration: 2.9s;
+  /* TELEFONO GRANDE */
+  /* TELEFONO CHICO */
+}
+@media only screen and (max-width: 415px) {
+  .notas {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .notas {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+}
+
+.notas:hover {
+  -webkit-text-decoration: overline #ed0000;
+          text-decoration: overline #ed0000;
+}
+
 /* -------------- FOOTER -------------- */
 .contenedor-footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   margin: 0rem;
@@ -292,12 +329,17 @@ body, html {
     -ms-grid-column: 2;
   }
   .contacto {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  .notas {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
   .contenedor-footer {
-    -ms-grid-row: 6;
+    -ms-grid-row: 7;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
   }
